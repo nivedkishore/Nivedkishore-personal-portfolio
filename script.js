@@ -102,3 +102,19 @@ function closeSuccessModal() {
         modal.classList.remove('active');
     }
 }
+
+/* Modal Functions */
+window.showSuccessModal = function() {
+    const modal = document.getElementById('success-modal');
+    if (modal) {
+        modal.classList.add('show');
+        document.getElementById('contact-form').reset();
+    }
+};
+
+window.closeSuccessModal = function() {
+    const modal = document.getElementById('success-modal');
+    if (modal) {
+        modal.classList.remove('show');
+    }
+};
