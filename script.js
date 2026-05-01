@@ -85,3 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/* Modal Functions */
+function showSuccessModal() {
+    const modal = document.getElementById('success-modal');
+    if (modal) {
+        modal.classList.add('active');
+        document.getElementById('contact-form').reset();
+        submitted = false; // Reset the submission flag
+    }
+}
+
+function closeSuccessModal() {
+    const modal = document.getElementById('success-modal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
